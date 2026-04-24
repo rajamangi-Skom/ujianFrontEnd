@@ -1,0 +1,163 @@
+.checkout-page {
+  background: #020617;
+  min-height: 100vh;
+  padding: 30px;
+  color: white;
+  font-family: Arial;
+}
+
+
+.header {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header button {
+  background: transparent;
+  border: none;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+
+.stepper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+}
+
+.step.active {
+  background: #2563eb;
+  color: white;
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  background: #1e293b;
+}
+
+
+.grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+.card {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+
+.product-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  background: #111827;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.product-info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.product-info p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+
+.qty-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.qty-row button {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid #38bdf8;
+  background: transparent;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+
+.divider {
+  height: 1px;
+  background: #1e293b;
+  margin: 15px 0;
+}
+
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.empty {
+  text-align: center;
+  color: #94a3b8;
+}

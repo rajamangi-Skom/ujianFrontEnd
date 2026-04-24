@@ -1,0 +1,25 @@
+.layout {
+  display: flex;
+}
+
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+
+.main {
+  margin-left: 250px; 
+  width: 100%;
+  min-height: 100vh;
+  background: #020617;
+}
+
+
+.content {
+  padding: 20px;
+}

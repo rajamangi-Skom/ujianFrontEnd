@@ -1,0 +1,147 @@
+.landing {
+  padding: 20px;
+  background: #020617;
+  min-height: 100vh;
+  color: white;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-text h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.hero button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: white;
+  color: #2563eb;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.kategori {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.kategori button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #38bdf8;
+  background: transparent;
+  color: #38bdf8;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.kategori button.active {
+  background: #38bdf8;
+  color: black;
+}
+
+.produk-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card-produk {
+  background: #0f172a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.card-produk:hover {
+  transform: translateY(-5px);
+}
+
+.card-produk img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.card-body small {
+  color: #38bdf8;
+  font-size: 12px;
+}
+
+.card-body h4 {
+  margin: 5px 0;
+}
+
+.card-body p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.card-body h3 {
+  margin: 8px 0;
+  color: #22c55e;
+}
+
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-outline {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #38bdf8;
+  background: transparent;
+  color: #38bdf8;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.loading,
+.empty {
+  text-align: center;
+  margin-top: 20px;
+  color: #94a3b8;
+}

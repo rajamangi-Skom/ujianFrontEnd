@@ -1,0 +1,191 @@
+
+.kategori-page {
+  font-family: "Rajdhani", sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+  background: #020617;
+  color: #e2e8f0;
+}
+
+.kategori-header {
+  margin-bottom: 20px;
+}
+
+.kategori-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.table-wrapper {
+  background: #0f172a;
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+thead {
+  background: #1e293b;
+}
+
+th {
+  text-align: left;
+  padding: 14px;
+  font-size: 13px;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: 14px;
+  border-top: 1px solid rgba(148, 163, 184, 0.1);
+  color: #e2e8f0;
+}
+
+
+tbody tr:hover {
+  background: rgba(56, 189, 248, 0.05);
+}
+
+
+.btn-edit {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: black;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-edit:hover {
+  background: #0ea5e9;
+  transform: translateY(-1px);
+}
+
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  background: #0f172a;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+}
+
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  width: 420px;
+  background: #0f172a;
+  border-radius: 14px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 24px;
+  animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-content h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  background: #020617;
+  color: white;
+  outline: none;
+  margin-top: 10px;
+}
+
+
+.modal-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.btn-update {
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  color: white;
+}
+
+.btn-update:hover {
+  transform: translateY(-2px);
+}
+
+
+.btn-cancel {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}

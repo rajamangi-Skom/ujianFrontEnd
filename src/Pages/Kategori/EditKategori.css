@@ -1,0 +1,109 @@
+
+
+.kategori-page-edit {
+  font-family: "Rajdhani", sans-serif;
+  padding: 25px;
+  margin-left: 250px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e2e8f0;
+}
+
+.kategori-header {
+  margin-bottom: 20px;
+}
+
+.kategori-header h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+.form-wrapper {
+  max-width: 500px;
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #38bdf8;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  background: #020617;
+  color: #e2e8f0;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+.form-group img {
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 2px solid rgba(56, 189, 248, 0.25);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-delete-edit {
+  flex: 1;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn-delete-edit:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+.btn-update {
+  flex: 1;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}
+
+.btn-update:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.5);
+}

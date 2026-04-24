@@ -32,7 +32,7 @@ const Cart = () => {
       });
 
       const res = await axios.post(
-        "http://localhost:3003/order/create",
+        `${import.meta.env.VITE_API_URL}/order/create`,
         { items },
         {
           headers: {
@@ -68,7 +68,7 @@ const Cart = () => {
       }));
 
       await axios.post(
-        "http://localhost:3003/order/create",
+        ` ${import.meta.env.VITE_API_URL}/order/create`,
         { items },
         {
           headers: {

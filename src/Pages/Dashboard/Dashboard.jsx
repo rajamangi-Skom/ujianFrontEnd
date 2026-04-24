@@ -53,7 +53,6 @@ const Dashboard = () => {
     }
   };
 
-
   const today = new Date();
 
   const formatDate = (d) => d.toISOString().split("T")[0];
@@ -66,7 +65,6 @@ const Dashboard = () => {
 
   const month = today.toISOString().slice(0, 7);
 
-
   const totalPendapatanBulanIni = pesanan
     .filter((p) => p.createdAt?.startsWith(month))
     .reduce((sum, p) => sum + Number(p.totalPrice || 0), 0);
@@ -78,7 +76,6 @@ const Dashboard = () => {
   const pesananTerbaru = [...pesanan]
     .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
     .slice(0, 5);
-
 
   const handleSimpanStok = async (produkItem) => {
     try {
@@ -106,7 +103,6 @@ const Dashboard = () => {
       console.log("Update stok error:", err.response || err);
     }
   };
-
 
   const grafikPendapatan = Array.from({ length: 7 }, (_, i) => {
     const d = new Date();
@@ -140,7 +136,6 @@ const Dashboard = () => {
     <div className="dashboard">
       <h3>Dashboard Admin</h3>
 
-      
       <div className="dashboard-cards">
         <div className="dashboard-card green">
           <TfiStatsUp />
@@ -175,7 +170,6 @@ const Dashboard = () => {
         </div>
       </div>
 
-     
       <div className="dashboard-charts">
         <div className="chart-card">
           <h4>Pendapatan 7 Hari</h4>
@@ -196,8 +190,8 @@ const Dashboard = () => {
           <h4>Order 7 Hari</h4>
 
           <ResponsiveContainer width="100%" height={260}>
-            <BarChart data={grafikJumlah}>
-              <Bar dataKey="jumlah" />
+            <BarChart data={grafikJumlah} >
+              <Bar dataKey="jumlah" fill="#00ddff"/>
               <XAxis dataKey="tgl" />
               <YAxis />
               <Tooltip />
@@ -208,9 +202,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-    
       <div className="dashboard-bottom">
-      
         <div>
           <h4>Pesanan Terbaru</h4>
 
@@ -237,7 +229,6 @@ const Dashboard = () => {
           </div>
         </div>
 
-     
         <div>
           <h4>Stok Menipis</h4>
 

@@ -58,38 +58,6 @@ const Cart = () => {
     }
   };
 
-  const handleBayar = async () => {
-    try {
-      const token = localStorage.getItem("token");
-
-      const items = cart.map((item) => ({
-        produkId: item.id,
-        qty: item.qty,
-      }));
-
-      await axios.post(
-        ` ${import.meta.env.VITE_API_URL}/order/create`,
-        { items },
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        },
-      );
-
-      Swal.fire("Berhasil", "Pesanan berhasil dibuat", "success");
-
-      clearCart();
-      navigate("/landing");
-    } catch (err) {
-      Swal.fire(
-        "Gagal",
-        err.response?.data?.message || "Checkout gagal",
-        "error",
-      );
-    }
-  };
-
   if (cart.length === 0) {
     return (
       <div className="checkout-page">
@@ -138,8 +106,11 @@ const Cart = () => {
           {cart.map((item) => (
             <div className="product-card" key={item.id}>
               <img
-                src={`http://localhost:3003/uploads/${item.image}`}
-                alt={item.name}
+                src={
+                  item.image?.startsWith("http")
+                    ? item.image
+                    : `${import.meta.env.VITE_API_URL}/uploads/${item.image}`
+                }
               />
 
               <div className="product-info">

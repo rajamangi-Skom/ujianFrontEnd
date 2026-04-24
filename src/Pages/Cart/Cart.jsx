@@ -174,7 +174,7 @@ const Cart = () => {
 
           <div className="total">Total: Rp {total.toLocaleString("id-ID")}</div>
 
-          <button className="pay-btn" onClick={handleBayar}>
+          <button className="pay-btn" onClick={handleCheckout}>
             Bayar Sekarang
           </button>
         </div>
